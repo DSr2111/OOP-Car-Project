@@ -15,3 +15,13 @@ class vehicle {
     return `This vehicle is a ${year} ${make} ${model}`;
   }
 }
+
+//Create a class for a car. The Car class should inherit from Vehicle and each
+//car instance should have a property called numWheels which has a value of 4.
+
+class car extends vehicle {
+  constructor(make, model, year) {
+    super(make, model, year);
+    this.numWheels = 4;
+  }
+}
