@@ -40,3 +40,18 @@ class Motorcycle extends Vehicle {
     return "VROOOM!";
   }
 }
+
+//create class for Garage, should have prop vehicles, which stores array
+//of vehicles, and capacity,
+
+class Garage {
+  vehicles = [];
+  capacity = 4;
+  add(make, model, year) {
+    if (this.vehicles.length > this.capacity) {
+      return "Garage is full";
+    } else {
+      this.vehicles.push(make, model, year);
+    }
+  }
+}
