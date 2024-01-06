@@ -25,3 +25,18 @@ class Car extends Vehicle {
     this.numWheels = 4;
   }
 }
+
+//Create a class for a Motorcycle. This class should inherit from Vehicle
+//and each motorcycle instance should have a property called numWheels
+//which has a value of 2. It should also have a revEngine method which
+//returns “VROOM!!!”
+
+class Motorcycle extends Vehicle {
+  constructor(make, model, year) {
+    super(make, model, year);
+    this.numWheels = 2;
+  }
+  revEngine() {
+    return "VROOOM!";
+  }
+}
