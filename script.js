@@ -48,10 +48,15 @@ class Garage {
   vehicles = [];
   capacity = 4;
   add(newVehicle) {
+    if (!newVehicle instanceof Vehicle) {
+      return "Only Vehicles allowed in the Garage";
+    }
+
     if (this.vehicles.length > this.capacity) {
       return "Garage is full";
     } else {
       this.vehicles.push(newVehicle);
+      return "Vehicle added!";
     }
   }
 }
