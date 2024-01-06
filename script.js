@@ -7,4 +7,11 @@ class vehicle {
     this.model = model;
     this.year = year;
   }
+  honk() {
+    return "Beep";
+  }
+
+  toString() {
+    return `This vehicle is a ${year} ${make} ${model}`;
+  }
 }
