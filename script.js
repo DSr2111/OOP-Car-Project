@@ -47,11 +47,11 @@ class Motorcycle extends Vehicle {
 class Garage {
   vehicles = [];
   capacity = 4;
-  add(make, model, year) {
+  add(newVehicle) {
     if (this.vehicles.length > this.capacity) {
       return "Garage is full";
     } else {
-      this.vehicles.push(make, model, year);
+      this.vehicles.push(newVehicle);
     }
   }
 }
