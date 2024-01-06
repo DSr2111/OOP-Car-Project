@@ -48,7 +48,7 @@ class Garage {
   vehicles = [];
   capacity = 4;
   add(newVehicle) {
-    if (!newVehicle instanceof Vehicle) {
+    if (!(newVehicle instanceof Vehicle)) {
       return "Only Vehicles allowed in the Garage";
     }
 
